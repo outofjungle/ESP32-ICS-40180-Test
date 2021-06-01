@@ -16,7 +16,7 @@ void update_color(uint32_t min, uint32_t max)
 {
   uint32_t peak2peak = max - min;
   uint32_t amp = map(peak2peak, 0, AUD_MAX, 0, NUM_LEDS);
-  fill_solid(leds, NUM_LEDS, CRGB::Blue);
+  fill_solid(leds, NUM_LEDS, CRGB::Black);
 
   Serial.printf("min=%d, max=%d, amp=%d\n", min, max, amp);
 
